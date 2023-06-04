@@ -10219,11 +10219,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\mraso\\Desktop\\BlogDemo\\BackEnd-BlogDemo\\Blog.ApiLayer\\Blog.ApiLayer.csproj",
+      "projectUniqueName": "C:\\Users\\mraso\\Desktop\\BlogDemo\\BackEnd-BlogDemo\\Blog.ApiLayer\\Blog.ApiLayer.csproj",
       "projectName": "Blog.ApiLayer",
-      "projectPath": "c:\\Users\\mraso\\Desktop\\BlogDemo\\BackEnd-BlogDemo\\Blog.ApiLayer\\Blog.ApiLayer.csproj",
+      "projectPath": "C:\\Users\\mraso\\Desktop\\BlogDemo\\BackEnd-BlogDemo\\Blog.ApiLayer\\Blog.ApiLayer.csproj",
       "packagesPath": "C:\\Users\\mraso\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\mraso\\Desktop\\BlogDemo\\BackEnd-BlogDemo\\Blog.ApiLayer\\obj\\",
+      "outputPath": "C:\\Users\\mraso\\Desktop\\BlogDemo\\BackEnd-BlogDemo\\Blog.ApiLayer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -10246,8 +10246,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "c:\\Users\\mraso\\Desktop\\BlogDemo\\BackEnd-BlogDemo\\Blog.BusinessLayer\\Blog.BusinessLayer.csproj": {
-              "projectPath": "c:\\Users\\mraso\\Desktop\\BlogDemo\\BackEnd-BlogDemo\\Blog.BusinessLayer\\Blog.BusinessLayer.csproj"
+            "C:\\Users\\mraso\\Desktop\\BlogDemo\\BackEnd-BlogDemo\\Blog.BusinessLayer\\Blog.BusinessLayer.csproj": {
+              "projectPath": "C:\\Users\\mraso\\Desktop\\BlogDemo\\BackEnd-BlogDemo\\Blog.BusinessLayer\\Blog.BusinessLayer.csproj"
             }
           }
         }
