@@ -1,0 +1,14 @@
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.DataAccessLayer\bin\Release\net6.0\Blog.DataAccessLayer.deps.json
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.DataAccessLayer\bin\Release\net6.0\Blog.DataAccessLayer.runtimeconfig.json
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.DataAccessLayer\bin\Release\net6.0\Blog.DataAccessLayer.dll
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.DataAccessLayer\bin\Release\net6.0\Blog.DataAccessLayer.pdb
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.DataAccessLayer\obj\Release\net6.0\Blog.DataAccessLayer.csproj.AssemblyReference.cache
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.DataAccessLayer\obj\Release\net6.0\Blog.DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.DataAccessLayer\obj\Release\net6.0\Blog.DataAccessLayer.AssemblyInfoInputs.cache
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.DataAccessLayer\obj\Release\net6.0\Blog.DataAccessLayer.AssemblyInfo.cs
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.DataAccessLayer\obj\Release\net6.0\Blog.DataAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.DataAccessLayer\obj\Release\net6.0\Blog.DataAccessLayer.dll
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.DataAccessLayer\obj\Release\net6.0\refint\Blog.DataAccessLayer.dll
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.DataAccessLayer\obj\Release\net6.0\Blog.DataAccessLayer.pdb
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.DataAccessLayer\obj\Release\net6.0\Blog.DataAccessLayer.genruntimeconfig.cache
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.DataAccessLayer\obj\Release\net6.0\ref\Blog.DataAccessLayer.dll

@@ -1,0 +1,15 @@
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.BusinessLayer\bin\Release\net6.0\Blog.BusinessLayer.deps.json
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.BusinessLayer\bin\Release\net6.0\Blog.BusinessLayer.dll
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.BusinessLayer\bin\Release\net6.0\Blog.BusinessLayer.pdb
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.BusinessLayer\bin\Release\net6.0\Blog.DataAccessLayer.dll
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.BusinessLayer\bin\Release\net6.0\Blog.DataAccessLayer.pdb
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.BusinessLayer\obj\Release\net6.0\Blog.BusinessLayer.csproj.AssemblyReference.cache
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.BusinessLayer\obj\Release\net6.0\Blog.BusinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.BusinessLayer\obj\Release\net6.0\Blog.BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.BusinessLayer\obj\Release\net6.0\Blog.BusinessLayer.AssemblyInfo.cs
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.BusinessLayer\obj\Release\net6.0\Blog.BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.BusinessLayer\obj\Release\net6.0\Blog.BusinessLayer.csproj.CopyComplete
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.BusinessLayer\obj\Release\net6.0\Blog.BusinessLayer.dll
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.BusinessLayer\obj\Release\net6.0\refint\Blog.BusinessLayer.dll
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.BusinessLayer\obj\Release\net6.0\Blog.BusinessLayer.pdb
+C:\Users\mraso\Desktop\BlogDemo\BackEnd-BlogDemo\Blog.BusinessLayer\obj\Release\net6.0\ref\Blog.BusinessLayer.dll
