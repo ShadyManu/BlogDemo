@@ -29,3 +29,9 @@ Oppure semplicemente da Docker Desktop, sotto la voce: Containers.
 A questo punto, non vi resta che andare su localhost:4200, ed è già tutto configurato. Il Frontend ascolta sulla porta 4200 del vostro pc, mentre il backend su quella 8080.
 
 # Docker-compose
+Per fare tutto in modo automatizzato, possiamo usare docker-compose. Basta scaricare il file che si trova dentro il branch 'main' con il nome di **docker-compose.yaml**, aprire il terminale di Visual Studio Code, assicurarsi di avere DockerDesktop acceso, assicurarsi di non avere occupate le porte 4200 e 8080 del pc dove si sta eseguendo Docker Desktop, posizionarsi nella directory dove si trova il file, e digitare da terminale il seguente comando:
+  docker-compose up
+Così facendo, vi scaricherà le due immagini del frontend e del backend, e ve le runnerà automaticamente sulla porta 4200 e 8080. Assicurarsi da DockerDesktop, nella sezione containers, che le due immagini stiano effettivamente runnando, e adesso si potrà navigare nel sito da:
+  localhost:4200
+Per stoppare i contenitori, basta scrivere sempre da terminale:
+  docker-compose down
