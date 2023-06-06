@@ -1,0 +1,74 @@
+<!-- Alert di un possibile errore nelle chiamate asincrone -->
+<app-alert-message *ngIf="showAlert" [errorMessage]="errorMessage"></app-alert-message>
+
+<div class="mainContainer">
+
+    <div *ngIf="!loader" class="secondContainer">
+
+        <!-- PRIMO DIV CONTENENTE IL PULSANTE 'New Post' -->
+        <div class="firstThird">
+            <div class="btnContainer">
+                <button type="button" class="btn btn-primary btn-sm" (click)="createPost()">New Post</button>
+            </div>
+        </div>
+
+        <!-- SECONDO DIV CONTENENTE L' *ngFor DEGLI ARTICOLI -->
+        <div class="secondThird">
+
+            <!-- PRIMO NG FOR TANTE QUANTE DEVONO ESSERE LE PAGINE (IN BASE A QUANTI ELEMENTI SI VUOLE MOSTRARE PER PAGINA) -->
+            <div *ngFor="let page of pages; index as i;" style="height: 100%;" [hidden]="!(switchIndex == i+1)"
+                id="myDiv">
+
+                <!-- SECONDO NG FOR CHE SI ESEGUE TOT VOLTE QUANTI SONO GLI ITEM DA MOSTRARE PER PAGINA -->
+                <div class="posts" *ngFor="let post of posts.slice(page, page + itemsPerPage)" (click)="openPost(post.id)">
+
+                    <!-- CARD DELL'ANTEPRIMA DEL POST, CON AVATAR, TITOLO, AUTORE E UNA RIGA DEL BODY -->
+                    <div class="avatar">
+                        <app-avatar [name]="post.author"></app-avatar>
+                    </div>
+                    <div class="titleBody">
+                        <div class="title">
+                            <h4 id="one">{{post.title}}</h4>
+                            <h4 id="two"> | </h4>
+                            <h4 id="three"><i>by </i>{{post.author}}</h4>
+                        </div>
+                        <div class="body">
+                            <p>{{post.body}}</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- TERZO DIV CONTENENTE L'IMPAGINAZIONE -->
+        <div class="thirdThird">
+           
+            <div class="upPaging"> 
+
+                <!-- IMPAGINAZIONE DINAMICA -->
+                <ngb-pagination style="background-color: transparent!important;" 
+                [collectionSize]="posts.length" [(page)]="switchIndex" [pageSize]="itemsPerPage" a
+                ria-label="Default pagination">
+                
+                </ngb-pagination>
+
+            </div> 
+            
+        </div>
+
+    </div>
+
+    <!-- SKELETON LOADER DEI POSTS -->
+    <ngx-skeleton-loader class="skeletonContainer" *ngIf="loader" [count]="totalCountSkeleton" appearance="line"
+    [theme]="{
+        height: '15%',
+        display: 'flex',
+        'flex-direction': 'column',
+        padding: '2% 2% 2% 2%',
+        'border-radius': '12px',
+        'background-color': 'lightgrey'
+    }"
+    ></ngx-skeleton-loader>
+
+</div>

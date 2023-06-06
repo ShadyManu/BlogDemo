@@ -1,0 +1,20 @@
+<div class="container">
+
+    <!-- DIV DEL RETTANGOLO LOGIN/REGISTER -->
+    <div class="rectangle">
+
+        <!-- PULSANTI PER SCEGLIERE SE VISUALIZZARE IL BOX DEL LOGIN O QUELLO DEL REGISTER -->
+        <div class="d-grid gap-2 col-8 mx-auto choices">
+            <button class="btn btn-primary" type="button" (click)="viewLogin()">LOGIN</button>
+            <button class="btn btn-primary" type="button" (click)="viewRegister()">REGISTER</button>
+        </div>
+
+        <!-- CHIAMA L'APP-LOGIN O L'APP-REGISTER IN BASE A COSA SI E' SCELTO SOPRA. DI DEFAULT APRE IL LOGIN -->
+        <div class="form col-8" style="height: 75%; position: relative;">
+            <app-register *ngIf="showRegister" (isRegistered)="viewLogin()"></app-register>
+            <app-login *ngIf="showLogin"></app-login>
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,20 @@
+.wrapper{
+  background-color:transparent;
+  padding:.24rem;
+  width:4rem;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar{
+  width:3rem;
+  border-radius:100%;
+  text-align: center;
+  background-color: #426fa1;
+}
+
+.avatar span{
+  line-height: 3rem;
+  color:white;
+}

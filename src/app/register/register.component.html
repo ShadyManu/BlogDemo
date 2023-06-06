@@ -1,0 +1,46 @@
+<div class="container" [formGroup]="registerForm">
+
+    <!-- Div degli input: Username, Passworde e Name -->
+    <div class="divInputs">
+
+        <div class="mb-3" style="width: 100%;">
+            <label class="form-label">Username
+                <span style="color: red;" *ngIf="!checkUsername"> *</span>
+            </label>
+            <input type="text" class="form-control" placeholder="username"formControlName="username">
+        </div>
+
+        <div class="mb-3" style="width: 100%;">
+            <label class="form-label">Password
+                <span style="color: red;" *ngIf="!checkPassword"> *</span>
+            </label>
+            <input type="password" class="form-control" placeholder="*****" formControlName="password">
+        </div>
+        
+        <div class="mb-3" style="width: 100%;">
+            <label class="form-label">Name
+                <span style="color: red;" *ngIf="!checkName"> *</span>
+            </label>
+            <input type="text" class="form-control" placeholder="name" formControlName="name">
+        </div>
+
+    </div>
+    
+    <!-- Div del pulsante 'Register' -->
+    <div class="d-grid gap-2 col-12 mx-auto divBtn">
+        <button
+            #popOver="ngbPopover"
+            type="button"
+            triggers="manual"
+            class="btn btn-primary btn-lg"
+            placement="top"
+            [ngbPopover]="message"
+            [disabled]="!isRegisterValid || checkSendRegister"
+            (click)="register()"
+            [ngStyle]="redBtn()">
+            Register
+        </button>
+      
+    </div>
+
+</div>

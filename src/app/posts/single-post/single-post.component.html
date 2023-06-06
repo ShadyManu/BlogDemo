@@ -1,0 +1,118 @@
+<!-- Alert di un possibile errore nelle chiamate asincrone -->
+<app-alert-message *ngIf="showAlert" [errorMessage]="errorMessage"></app-alert-message>
+
+<div class="mainContainer">
+    <div class="secondContainer">
+
+        <!-- FRECCIA PER TORNARE INDIETRO E AVATAR CON L'INIZIALE DELL'AUTORE DEL POST -->
+        <div class="picture" *ngIf="name != undefined">
+            <img src="../../assets/arrow-return-left.svg" (click)="goBack()">
+            <app-avatar [name]="name"></app-avatar>
+        </div>
+
+        <!-- TITOLO DELL'ARTICOLO + AUTORE DELL'ARTICOLO -->
+        <div class="title"> 
+
+            <div style="display: flex;">
+                <div>
+                   <h1>{{post?.title}}</h1>
+                </div>   
+            </div>
+
+            <div style="margin-top: 1%;">
+                <div class="div3">
+                    <i>by {{post?.author}}</i>
+                 </div>
+            </div>
+
+        </div>
+            
+        <!-- BODY DELL'ARTICOLO -->
+        <div class="body card" style="padding: 1% 1% 1% 1%;">
+            {{post?.body}}
+        </div>
+
+        <!-- SCRITTA 'Comment' E PULSANTE PER CREARE UN NUOVO COMMENTO + MODALE INSERIMENTO NUOVO COMMENTO -->
+        <div class="comment">
+            <div style="height: 100%; display: flex; align-items: center;">
+                <h2>{{numComments}}</h2>
+            </div>
+            
+            <ng-template #content let-c="close" let-d="dismiss" [formGroup]="commentForm"
+             style="display: flex!important; height: 100%; justify-content: center; align-items: center;">
+
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modal-basic-title">Inserisci un nuovo commento</h4>
+                    <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+                </div>
+
+                <div class="modal-body">
+                    <textarea style="width: 100%;" formControlName="comment"></textarea>
+                </div>
+
+                <div class="modal-footer">
+                    <button id="send" [disabled]="!checkForm || checkSendButton" type="button" 
+                    class="btn btn-outline-dark" (click)="sendComment()">{{result}}</button>
+                </div>
+
+            </ng-template>
+
+            <button class="newCommentBtn btn btn-primary" (click)="openModal(content)">
+                New Comment
+            </button>
+        </div>
+
+        <!-- CARDS DEI COMMENTI -->
+        <div *ngIf="!loader" class="cardsContainer">            
+
+            <div *ngFor="let comment of comments" class="card" class="cardComment">
+
+                <!-- AVATAR DI CHI HA SCRITTO IL COMMENTO E IL NOME -->
+                <div class="top">
+                    <app-avatar class="cardAvatar" [name]="comment.commentAuthor">
+                    </app-avatar>
+                    <h3 class="cardAuthor">{{comment.commentAuthor}}</h3>
+                </div>  
+
+                <!-- BODY DEL COMMENTO -->
+                <div class="down">
+                    {{comment.body}}
+                </div>    
+
+            </div>
+
+        </div>
+
+        <!-- SKELETON PATTERN LOADER PER LA SEZIONE COMMENTI -->
+        <div *ngIf="loader" style="display: flex;">
+            <div *ngFor="let item of [1, 2, 3, 4, 5, 6]" style="padding-right: 5%;">
+                <ngx-skeleton-loader
+                *ngIf="loader"
+                appearance="circle"
+                [theme]="{ width: '80px', height: '80px' }">
+                </ngx-skeleton-loader>
+        
+                <ngx-skeleton-loader
+                  *ngIf="loader"
+                  [theme]="{
+                    width: '200px',
+                    'border-radius': '0',
+                    height: '15px',
+                    'margin-bottom': '10px'}">
+                </ngx-skeleton-loader>
+        
+                <ngx-skeleton-loader
+                  *ngIf="loader"
+                  [theme]="{ 
+                    width: '200px', 
+                    'border-radius': '0', 
+                    height: '15px' }">
+                </ngx-skeleton-loader>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+        
+

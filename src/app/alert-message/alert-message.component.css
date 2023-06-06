@@ -1,0 +1,8 @@
+.alertClass {
+    width: 50%; 
+    height: 85px; 
+    position: absolute;
+    bottom: 0%;
+    right: 25%;
+    z-index: 1;
+}

@@ -1,0 +1,60 @@
+<!-- Alert di un possibile errore nelle chiamate asincrone -->
+<app-alert-message *ngIf="showAlert" [errorMessage]="errorMessage"></app-alert-message>
+
+<div class="container">
+
+    <!-- DIV CHE CONTIENE L'IMMAGINE DELLA FRECCIA INDIETRO, CHE RIPORTA AI POSTS -->
+    <div style="display: contents;" (click)="goBack()">
+        <img src="../../assets/arrow-return-left.svg" style="height: 10%; margin-top: 2%; cursor: pointer;">
+    </div>
+
+    <div class="form" [formGroup]="postForm">
+
+        <!-- DIV DELLA SCRITTA 'New Post' -->
+        <h1 class="header">
+            New Post
+        </h1>
+
+        <!-- DIV DELLA SCRITTA 'Title' -->
+        <div class="label">
+
+            <label>Title <span *ngIf="!checkTitle" style="color: red; position: unset;"> *</span>
+
+                <span *ngIf="postForm.get('title')!.invalid && postForm.get('title')!.touched">
+                    Inserisci uno titolo valido
+                </span>
+
+            </label>
+
+        </div>
+
+        <!-- INPUT DEL TITOLO -->
+        <input type="text" formControlName="title"/>
+
+        <!-- DIV DELLA SCRITTA 'Body' -->
+        <div class="label">
+            <label>Body<span *ngIf="!checkBody" style="color: red; position: unset;"> *</span>
+
+                <span *ngIf="postForm.get('body')!.invalid && postForm.get('body')!.touched">
+                    Inserisci un body valido
+                </span>
+
+            </label>
+        </div>
+
+        <!-- INPUT TEXTAREA DEL BODY -->
+        <textarea formControlName="body" style="width: 80%; height: 30%;">
+        </textarea>
+
+        <!-- DIV DEL PULSANTE PER CREARE IL NUOVO POST -->
+        <div class="button">
+
+            <button [ngClass]="{'submitButtonValid':checkForm, 'submitButtonInvalid':!checkForm}" 
+            [disabled]="!checkForm || result" type="button" (click)="sendPost()">
+                {{button}}
+            </button>
+
+        </div>
+
+    </div>
+</div>
