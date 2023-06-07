@@ -1,6 +1,6 @@
 .rectangle {
     width: 50%;
-    height: 65%;
+    height: 70%;
     border: 2px solid #ccc;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s, box-shadow 0.3s;
@@ -46,7 +46,7 @@
     }    
 }
 
-@media (min-width> 1921px){
+@media (min-width: 1921px){
     .rectangle {
         height: 75%;
     }

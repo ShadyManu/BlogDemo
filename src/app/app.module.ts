@@ -50,7 +50,7 @@ import { APP_BASE_HREF } from '@angular/common';
     NgbAlertModule
   ],
   providers: [
-    {provide: APP_BASE_HREF, useValue: '/dist/front-end-blog-demo'},
+    //{provide: APP_BASE_HREF, useValue: ''},
     AuthService,
     CookieService,
     {provide:HTTP_INTERCEPTORS, useClass:TokenInterceptorService, multi:true}
