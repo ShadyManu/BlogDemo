@@ -1,0 +1,70 @@
+.mainContainer {
+    width: 100%; 
+    background-color: #b38b8f; 
+    position: relative; 
+    display: flex;
+    height: 8vh;
+}
+
+.leftBar{
+    position: absolute; 
+    right: 7%; 
+    display: flex; 
+    top: 32%;
+    width: 76%;
+    height: 50%;
+    overflow: hidden;
+}
+
+.goRightWrite {
+    position: absolute; 
+    right: 0%;
+}
+
+.goRightAvatar {
+    position: absolute; 
+    right: 0%;
+    display: flex; 
+    align-items: center; 
+    height: 8vh;
+}
+
+img {
+    max-height: 90%;
+}
+
+.imgContainer {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media (max-width: 880px){
+    .goRightWrite{
+        right: 5%;
+    }
+}
+
+@media (max-width: 560px){
+    .goRightWrite{
+        right: 10%;
+    }
+}
+
+@media (max-width: 375px){
+    .goRightWrite{
+        right: 15%;
+    }
+
+}
+
+@media (max-width: 280px){
+    .leftBar {
+        right: 7%;
+        top: 26%;
+    }
+}
+
+
+
+

@@ -1,0 +1,41 @@
+<div class="container" [formGroup]="loginForm">
+
+    <!-- DIV DEGLI INPUT: USERNAME, PASSWORD E CHECKBOX (REMEMBER ME) -->
+    <div class="divInputs">
+        <div class="mb-3" style="width: 100%;">
+            <label class="form-label">Username
+                <span style="color: red;" *ngIf="!checkUsername"> *</span>
+            </label>
+            <input type="text" class="form-control" placeholder="username"formControlName="username">
+        </div>
+
+        <div class="mb-3" style="width: 100%;">
+            <label class="form-label">Password
+                <span style="color: red;" *ngIf="!checkPassword"> *</span>
+            </label>
+            <input type="password" class="form-control" placeholder="*****" formControlName="password">
+        </div>
+
+        <div class="form-check" style="margin-bottom: 5%; width: 100%;">
+            <input class="form-check-input" type="checkbox" formControlName="rememberMe" id="rememberMe" style="cursor: pointer;">
+            <label class="form-check-label" for="rememberMe" style="cursor: pointer;">Remember Me</label>
+        </div>
+    </div>
+    
+    <!-- Div del bottone 'Login' -->
+    <div class="d-grid gap-2 col-12 mx-auto divBtn">
+        <button
+            #popOver="ngbPopover"
+            type="button"
+            triggers="manual"
+            class="btn btn-primary btn-lg"
+            placement="top"
+            [ngbPopover]="message"
+            [disabled]="!isLoginValid"
+            (click)="login()"
+            [ngStyle]="redBtn()">
+            Login
+        </button>
+    </div>
+
+</div>

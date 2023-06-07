@@ -1,0 +1,24 @@
+<div class="mainContainer">
+
+    <!-- DIV DELL'IMMAGINE PER FARE IL LOGOUT DAL SITO -->
+    <div class="imgContainer" (click)="logout()">
+
+        <img src="../../assets/NicePng_logout-png_5189122.png" alt="Logout">
+
+    </div>
+   
+    <!-- SCRITTA DI BENVENUTO -->
+    <div class="leftBar">
+
+        <h4 class="goRightWrite">
+            Welcome {{name}}
+        </h4>
+       
+    </div>
+
+    <!-- SI RICHIAMA IL COMPONENT 'app-avatar' PER GENERARE L'AVATAR CON LE INIZIALI DEL NOME -->
+    <div style="max-height: 100% ;" *ngIf="name != undefined">
+        <app-avatar class="goRightAvatar" [name]="name"></app-avatar>
+    </div>
+
+</div>

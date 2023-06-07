@@ -1,0 +1,10 @@
+version: "3.8"
+services:
+  frontend:
+    image: shadymanu/frontend-blogdemo
+    ports:
+      - 4200:80
+  backend:
+    image: shadymanu/backend-blogdemo
+    ports:
+      - 8080:80
